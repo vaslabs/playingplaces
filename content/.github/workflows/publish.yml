@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master  # Set a branch to deploy
-  pull_request:
-
 jobs:
   deploy:
     runs-on: ubuntu-18.04
