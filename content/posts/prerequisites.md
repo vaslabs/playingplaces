@@ -25,6 +25,7 @@ Note: I linked on the products I bought for convenience, in no way am I endorsin
 7. Basic coding skills (I've used a bit of nodejs, a bit of bash and a bit of python)
 8. 2 Extension cables (adapt the size according to your pc needs)
 9. An amazon developer account (aws) and basic knowledge on creating Alexa skills.
+10. Your desktop session on your gaming pc auto logs in and starts steam.
 
 ## Design
 
