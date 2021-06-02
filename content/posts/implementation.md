@@ -121,7 +121,7 @@ On the steam running machine forward all output of the gamepad hosting machine t
  ssh username@gamepadhost cat /dev/input/event20 >/dev/input/event26
  ```
 
-If both are behind NAT the best course of action would be to create a netcat proxy that both machine can connect to (if there's interest I'll cover this in the future)
+If both are behind NAT the best course of action would be to create a netcat proxy that both machines can connect to (if there's interest I'll cover this in the future)
 
 ## Summary
 
