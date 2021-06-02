@@ -7,15 +7,17 @@ weight: 1
 
 For a while now, I've been playing games on linux. There are various tutorials on how to get started using lutris, steam, or just wine/proton. In this ad-hoc blog series, I'll describe how I've setup my own personal remote gaming with the ability to play games from anywhere in the world, using steam and only Linux OS.
 
-More specifically my setup as of completing my "personal stadia" is a Gaming PC featuring a 5700 rx graphics card and a laptop. Both are running Fedora 34 (no dual boot, no anything else). I also have a Pixel 3 running stock Android and a Raspberry Pi 4 running raspbian.
+More specifically my setup as of completing my "personal stadia" is powered by a Gaming PC featuring a 5700 rx AMD graphics card with the main client being a high end workstation laptop. Both are running Fedora 34 (no dual boot, no anything else). I also have a Pixel 3 running stock Android and a Raspberry Pi 4 running raspbian.
 
-Given these, an amazon echo and some IoT peripherals, I'll describe how you can build your own personal stadia. On one hand we are going to rely heavily on steam but we are going to add a few missing features that will allow us to reliably play any game that can be played on Linux anywhere in the world.
+Given these, an amazon echo and some IoT peripherals, I'll describe how you can build your own personal stadia. On one hand we are going to rely heavily on steam but we are going to add a few missing features that will allow us to reliably play  anywhere in the world any game that can be played on Linux.
 
 ## Motivation
 So, why did I do this? As someone pointed on [reddit](https://www.reddit.com/r/linux_gaming/comments/nksdry/personal_stadia/gzf3wrq/):
 > Steam Link app can send WoL pings to registered PCs. All you need to do is to enable WoL in Mobo settings, enable auto login and set Steam to start automatically.
 
-This is largely true, if you have reached this point, there are few extra things to complete your personal remote gaming platform.
+This is largely true, if you have reached this point, there are few extra toppings in completing your personal remote gaming platform.
+
+Also this article is meant to inspire and I hope I won't go into deep implementation details, but sometimes I get carried away.
 
 ### Power Management
 Your machine can freeze while playing. You don't want your gaming PC to remain locked, sometimes at 100% cpu usage risking high temperatures until you return home. You need a way to reset it from anywhere in the world.
