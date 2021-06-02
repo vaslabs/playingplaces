@@ -1,5 +1,5 @@
 ---
-title: "Personal stadia"
+title: "Personal remote gaming platform"
 weight: 1
 ---
 
