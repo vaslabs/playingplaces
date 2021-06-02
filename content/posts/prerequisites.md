@@ -19,7 +19,7 @@ Note: I linked on the products I bought for convenience, in no way am I endorsin
 1. 2 Smart plugs (I've used [these](https://www.amazon.co.uk/gp/product/B085LY7W7G))
 2. 2 Powerline adapters (3 for testing locally although you can test with the client over the wifi, adapt if your gaming pc is in proximity with the router, mine isn't) (I've used [these](https://www.amazon.co.uk/gp/product/B01BECPIMC))
 3. At least 2 ethernet cables (often included in the powerline adapters)
-4. An amazon echo (theoritically you can do with any smart home assistant, it just happened I have one of those lying around)
+4. An amazon echo (theoretically you can do with any smart home assistant, it just happened I have one of those lying around)
 5. A smart phone (helps with managing the smart plugs or giving commands to alexa if you are not home)
 6. An internet connection with good upload bandwidth (mine is 100Mpbs, in theory you can work with much less)
 7. Basic coding skills (I've used a bit of nodejs, a bit of bash and a bit of python)
