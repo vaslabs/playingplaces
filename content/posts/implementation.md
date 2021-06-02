@@ -99,6 +99,30 @@ This lambda function sends the skill intent to both queues and it's up to our im
 We need this as a dependency of sending a WoL message to the gaming PC. Luckily RPIs boot along with turning on the plug. So, if you connect your RPI to the smart plug, you can turn it on using Alexa or the phone app of the smart plug.
 
 
+## Game controlles without steam input (teasing version)
+
+Assuming that the gaming pc is behind NAT but the gamepad host is not:
+
+ps4 gamepads work with:
+1. Start ssh server on gamepad hosting machine
+2. Start ds4drv on both machines to emulate xbox
+```
+ds4drv --emulate-xpad-wireless --next-controller --hidraw
+```
+Find the xbox controller on both devices
+e.g.
+```python
+import evdev
+evdev.InputDevice("/dev/input/event27").name
+```
+
+On the steam running machine forward all output of the gamepad hosting machine to the xbox file path
+ ```bash
+ ssh username@gamepadhost cat /dev/input/event20 >/dev/input/event26
+ ```
+
+If both are behind NAT the best course of action would be to create a netcat proxy that both machine can connect to (if there's interest I'll cover this in the future)
+
 ## Summary
 
 We are almost there, if you have this working you can now play most games and manage your gaming PC over the internet effectively.
