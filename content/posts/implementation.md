@@ -129,8 +129,8 @@ We are almost there, if you have this working you can now play most games and ma
 
 Things that are missing and you might be interested at.
 
-1. Remote gamepad setup to play games that don't work with steam input.
-2. More detailed explanations on any of the components I described.
+1. Moe details on gamepad setup to play games that don't work with steam input.
+2. More detailed explanations on any of the aws components I described.
 3. What to do if the Router crashes
 
 I will cover more things in the future but it would help if you told me your opinion on what you want covered [here](https://www.reddit.com/r/linux_gaming/comments/nksdry/personal_stadia/)
