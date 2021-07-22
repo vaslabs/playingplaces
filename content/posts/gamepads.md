@@ -33,7 +33,7 @@ My solution focuses on communication between my laptop and gaming pc, while I'm 
 The diagram below demonstrates the basic idea of my solution.
 
 
-[!connect_controllers](/posts/images/connect_controllers_diagram.jpg)
+![connect_controllers](/posts/images/connect_controllers_diagram.jpg)
 
 With this, we basically have permanent controllers connected to the gaming pc which steam sees all the time, so there's no hot plugging going on.
 We forward their input from the laptop to the middleware where the gaming pc can pull them. The communication can happen securely over ssh.
