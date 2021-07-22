@@ -28,7 +28,7 @@ My laptop and gaming pc are running Fedora 34 and I have a high end Android phon
 
 My solution focuses on communication between my laptop and gaming pc, while I'm not really bothered to stream from my phone.
 
-### Design solution
+### Design
 
 The diagram below demonstrates the basic idea of my solution.
 
@@ -39,7 +39,7 @@ With this, we basically have permanent controllers connected to the gaming pc wh
 We forward their input from the laptop to the middleware where the gaming pc can pull them. The communication can happen securely over ssh.
 
 
-### Solution implementation
+### Implementation
 
 I created an ec2 instance (t3.micro) on aws which is on free tier for 1 year. On the eu regions it costs roughly £10 per month if you are running it constantly. 
 
