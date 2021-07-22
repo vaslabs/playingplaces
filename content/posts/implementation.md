@@ -1,6 +1,6 @@
 ---
 title: "Implementing remote gaming"
-weight: 10
+weight: 4
 ---
 
 # Implementation
@@ -99,7 +99,7 @@ This lambda function sends the skill intent to both queues and it's up to our im
 We need this as a dependency of sending a WoL message to the gaming PC. Luckily RPIs boot along with turning on the plug. So, if you connect your RPI to the smart plug, you can turn it on using Alexa or the phone app of the smart plug.
 
 
-## Game controlles without steam input (teasing version)
+## Game controllers without steam input (teasing version)
 
 Assuming that the gaming pc is behind NAT but the gamepad host is not:
 

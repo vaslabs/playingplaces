@@ -1,6 +1,6 @@
 ---
 title: "Personal remote gaming: architecture"
-weight: 9
+weight: 3
 ---
 
 # Architecture
