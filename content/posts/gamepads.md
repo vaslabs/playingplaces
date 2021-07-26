@@ -12,6 +12,7 @@ are being destroyed and recreated. This may result in unresponsive games or stea
 
 Some games are also problematic with steam input and, again in my own experience, with dual shock 4 controllers. For example, Assassin's Creed Odyssey doesn't recognise the controllers with steam input ps4 support (something that changed recently). When I emulate them as xpad controllers though the game is able to work with them (by disabling steam input or disabling ps4 support and enabling xbox support).
 
+![disable_ps4_enable_xbox](/posts/images/allow_xbox_support.png)
 
 In order to have such games work and avoid instability when remote playing, I decided to create my own infrastructure to support gamepad streaming.
 
@@ -89,9 +90,13 @@ To get a more idea on streaming controllers (and moving up to 4) [these are my c
 
 The steps for a reliable connection with the setup above are:
 
-1. Start ds4drv on the machine you have physical access to (let's call this, the laptop), emulating xpad and on hidraw mode.
+1. Start [ds4drv](https://github.com/chrippa/ds4drv) on the machine you have physical access to (let's call this, the laptop), emulating xpad and on hidraw mode.
+
+![ds4drv_emulate_xpad](/posts/images/ds4drv_emulate_xpad.png)
+
 2. Connect the controllers normally on the laptop
 3. Disable device input on the steam link running on the laptop.
+![disable_steam_link_input](/posts/images/disable_steam_link_input.jpg)
 4. Start remote play
 5. Send the command for the gaming pc to connect to the middleware (the steps for this are [here](https://github.com/vaslabs/home-automation/blob/f49e21d867fb4efee433aaff80ee392cd65cefc3/stream_controllers.sh))
 
