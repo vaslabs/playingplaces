@@ -50,6 +50,9 @@ access to my PC which allowed me to reset steam.
 
 Having multiple partitions for the games was also helpful as I lost only the games that were on the main .steam/ location.
 
+
+## Future improvements
+
 More can be done to further reduce the likelihood of permanently losing access:
 
 1. There's only one Raspberry Pi that sends the Wake On Lan message to the PC. An additional one would give more redundancy and flexibility for recovery
