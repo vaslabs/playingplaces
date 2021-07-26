@@ -24,6 +24,7 @@ I have played recently the following games without issues (without the need for 
 2. eFootball PES 2021 SEASON UPDATE
 3. Can't Drive This
 4. The Outer worlds
+5. Cyberpunk 2077
 
 The games above except from outer worlds also play with the [custom gamepad streaming](/posts/gamepads). Also I can play the games below only with the xpad support and thus remotely with the custom gamepad solution.
 
