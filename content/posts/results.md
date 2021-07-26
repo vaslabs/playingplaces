@@ -49,3 +49,9 @@ The most worrying failure so far was that after a forced reboot steam got in a c
 access to my PC which allowed me to reset steam.
 
 Having multiple partitions for the games was also helpful as I lost only the games that were on the main .steam/ location.
+
+More can be done to further reduce the likelihood of permanently losing access:
+
+1. There's only one Raspberry Pi that sends the Wake On Lan message to the PC. An additional one would give more redundancy and flexibility for recovery
+2. There's one router that gets the systems online, if it breaks the worst case scenario would be to lose the ability of turning off the systems.
+One way to solve this would be to install a heart beat type of healthcheck to the systems, if they detect they lost access to the internet for some time, then they shutdown themselves.
