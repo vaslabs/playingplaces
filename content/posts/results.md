@@ -37,3 +37,15 @@ The games above except from outer worlds also play with the [custom gamepad stre
 
 
 Without the custom gamepad streaming I would lose access to a lot of my games while being away, so for my case it has been a valueable solution
+
+
+## Handling failures
+
+Building the multiple failsafe mechanisms on managing the PC remotely has been "life saving". Smart plugs helped with
+PC freezes and having the Alexa skill initiate "reboot system", "reboot steam", "start steam" has also been useful to recover faster.
+
+The most worrying failure so far was that after a forced reboot steam got in a corrupted state. Every time I was trying to start it
+(remotely) it errored with a libc.so.6 not found error. Luckily a few days back I had setup TeamViewer as an alternative method of gaining
+access to my PC which allowed me to reset steam.
+
+Having multiple partitions for the games was also helpful as I lost only the games that were on the main .steam/ location.
