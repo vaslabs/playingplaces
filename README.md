@@ -2,4 +2,4 @@
 
 Notes on playing video games on linux
 
-https://www.playingplaces.com
+http://www.playingplaces.com
