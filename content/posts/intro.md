@@ -5,7 +5,7 @@ weight: 1
 
 # Introduction
 
-For a while now, I've been playing games on linux. There are various tutorials on how to get started using lutris, steam, or just wine/proton. In this ad-hoc blog series, I'll describe how I've setup my own personal remote gaming with the ability to play games from anywhere in the world, using steam and only Linux OS.
+For a while now, I've been playing games on linux. There are various tutorials on how to get started using Lutris, steam, or just wine/proton. In this ad-hoc blog series, I'll describe how I've setup my own personal remote gaming with the ability to play games from anywhere in the world, using steam and only Linux OS.
 
 More specifically my setup as of completing my "personal stadia" is powered by a Gaming PC featuring a 5700 rx AMD graphics card with the main client being a high end workstation laptop. Both are running Fedora 34 (no dual boot, no anything else). I also have a Pixel 3 running stock Android and a Raspberry Pi 4 running raspbian.
 

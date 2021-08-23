@@ -5,7 +5,7 @@ weight: 3
 
 # Architecture
 
-Here I'm describing what you need to have and the connectivity relationship of each component to have a complete network that allows you to:
+Here I'm describing the components I've used and their interconnections in order to achieve:
 
 1. Do power management over the internet
 2. Have a reliable outgoing bandwidth
@@ -29,7 +29,7 @@ Note: I linked on the products I bought for convenience, in no way am I endorsin
 
 ## Design
 
-As shown in the house connectiviy diagram, the router is connected to a powerline adapter and another powerline adapter is in proximity to the gaming pc, connected to it over ethernet. Be ware that in order for the powerlines adapter to work, you need to have them in the same circuit in your home.
+As shown in the house connectivity diagram, the router is connected to a powerline adapter and another powerline adapter is in proximity to the gaming pc, connected to it over ethernet. Be ware that in order for the powerlines adapter to work, you need to have them in the same circuit in your home.
 
 My raspberry pi connects over wifi but a third optional power adapter can give it an additional connectivity option for redundancy. Both the RPI and the powerline adapter are connected to one extension cable which is powered on by the smart plug.
 
@@ -56,7 +56,7 @@ connected to a different SQS. That way, they can receive commands as SQS message
 
 #### Smart plugs
 
-Your smart plugs should support alexa and it's straight forward to manage them. You can also create custom routines on the alexa app to manage
+Your smart plugs should support Alexa and it's straight forward to manage them. You can also create custom routines on the Alexa app to manage
 the electrical power on/off.
 
 #### Custom skill

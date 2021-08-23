@@ -27,32 +27,27 @@ const AWS = require('aws-sdk');
 
 const sqs = new AWS.SQS({apiVersion: '2012-11-05'}); 
 
-const RPI_QUEUE = "https://sqs.eu-west-1.amazonaws.com/<home_actions>";
-const GAMING_PC_QUEUE = "https://sqs.eu-west-1.amazonaws.com/<gaming-pc-actions>";
+const RPI_QUEUE = process.env.RPI_QUEUE;
+const GAMING_PC_QUEUE = process.env.GAMING_PC_QUEUE;
 
 exports.handler = (event, context, callback) => {
  
-
-  sqs.sendMessage(params(RPI_QUEUE, event), function(err, data) {
-    if (err) {
-      console.log("Error", err);
-      context.succeed(response);
-    } else {
-      console.log("Success", data.MessageId);
-      context.succeed(response);
-    }
-  });
+  sendMessage(RPI_QUEUE, event);
+  sendMessage(GAMING_PC_QUEUE, event);
   
-  sqs.sendMessage(params(GAMING_PC_QUEUE, event), function(err, data) {
-    if (err) {
-      console.log("Error", err);
-      context.succeed(response);
-    } else {
-      console.log("Success", data.MessageId);
-      context.succeed(response);
-    }
-  });
 };
+
+function sendMessage(queue, event) {
+    sqs.sendMessage(params(queue, event), function(err, data) {
+        if (err) {
+          console.log("Error", err);
+          context.succeed(response);
+        } else {
+          console.log("Success", data.MessageId);
+          context.succeed(response);
+        }
+      });
+}
 
 
 function params(queueUrl, event) {
@@ -81,7 +76,6 @@ const response =
     "shouldEndSession": true
   }
 }
-
 ```
 
 Now you need to create 2 sqs queues and 2 iam users. I'm not covering this but in summary:
